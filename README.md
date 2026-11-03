@@ -1,4 +1,12 @@
-# Dev Container Features: Self Authoring Template
+# Software Pioniere Dev Container Features
+
+## Local Tests
+
+To use the Features locally link them as subfolders under .devcontainer folder
+
+```
+
+```
 
 > This repo provides a starting point and example for creating your own custom [dev container Features](https://containers.dev/implementors/features/), hosted for free on GitHub Container Registry.  The example in this repository follows the [dev container Feature distribution specification](https://containers.dev/implementors/features-distribution/).  
 >

@@ -1,0 +1,8 @@
+{
+    "scaleway_cli_on_focal": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal",
+        "features": {
+            "scaleway-cli": {}
+        }
+    }
+}

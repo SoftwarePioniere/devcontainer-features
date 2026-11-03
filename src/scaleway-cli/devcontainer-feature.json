@@ -1,0 +1,9 @@
+{
+    "name": "SoPi Scaleway CLI",
+    "id": "sopi.scaleway.cli",
+    "version": "0.0.1",
+    "description": "Install Scaleway CLI to devcontainers",    
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
