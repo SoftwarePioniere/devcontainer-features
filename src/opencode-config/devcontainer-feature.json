@@ -1,0 +1,22 @@
+{
+    "name": "sopi opencode-config",
+    "id": "opencode-config",
+    "version": "0.0.1",
+    "description": "configure opencode devcontainer with mounts",
+    "documentationURL": "https://opencode.ai",
+    "installsAfter": [
+        "ghcr.io/SoftwarePioniere/devcontainer-features/opencode"
+    ],
+    "mounts": [
+       {
+            "source": "${localEnv:HOME}/.ai-secrets",
+            "target": "/home/vscode/.ai-secrets",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.config/opencode",
+            "target": "/etc/opencode",
+            "type": "bind"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "name": "local-test",
+    "id": "local-test",
+    "version": "0.0.0",
+    "description": "test feature",
+    "documentationURL": "https://opencode.ai",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.ai-secrets",
+            "target": "/home/vscode/.ai-secrets",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.config/opencode",
+            "target": "/etc/opencode",
+            "type": "bind"
+        }
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "sst-dev.opencode"
+            ]
+        }
+    }
+}

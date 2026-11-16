@@ -9,9 +9,23 @@ gh auth token | docker login ghcr.io -u "$(gh api user -q .login)" --password-st
 
 ## Local Tests
 
+```
+
+# Vollständiges Rebuild inkl. Cache-Umgehung (wie "Full Rebuild")
+devcontainer build --workspace-folder . --no-cache  --log-level trace
+
+devcontainer up --workspace-folder . --remove-existing-container --log-level trace
+
+# Image bauen und taggen, ohne Container zu starten
+devcontainer build --workspace-folder . -t mein-image:latest
+
+```
+
+
 To use the Features locally link them as subfolders under .devcontainer folder
 
 ```
+
  "./opencode" : {}
 ```
 
