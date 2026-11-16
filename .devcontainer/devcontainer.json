@@ -10,5 +10,6 @@
         },
         "ghcr.io/devcontainers/features/docker-in-docker:4.1.3": {},
         "./opencode" : {}
-    }
+    },
+    "remoteUser": "vscode"
 }

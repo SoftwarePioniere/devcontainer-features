@@ -15,6 +15,7 @@ jobs:
         features:
           - color
           - hello
+          - opencode
           - scaleway-cli
         baseImage:
           - debian:latest
@@ -25,6 +26,13 @@ jobs:
 
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
+
+      - name: "Prepare OpenCode mount sources"
+        if: matrix.features == 'opencode'
+        run: |
+          mkdir -p "$HOME/.ai-secrets" "$HOME/.config/opencode/plugins"
+          touch "$HOME/.ai-secrets/sopi-personal.txt"
+          printf '{}\n' > "$HOME/.config/opencode/opencode.jsonc"
 
       - name: "Generating tests for '${{ matrix.features }}' against '${{ matrix.baseImage }}'"
         run: devcontainer features test --skip-scenarios -f ${{ matrix.features }} -i ${{ matrix.baseImage }} .

@@ -1,7 +1,7 @@
 {
     "name": "opencode",
-    "id": "opencode",
-    "version": "0.0.1",
+    "id": "sopi.opencode",
+    "version": "0.0.2",
     "description": "Install opencode to devcontainers - Software Pioniere Style",
     "documentationURL": "https://opencode.ai",
     "installsAfter": [
@@ -9,8 +9,8 @@
     ],
     "mounts": [
         {
-            "source": "${localEnv:HOME}/.ai-secrets/sopi-personal.txt",
-            "target": "/home/vscode/.ai-secrets/sopi-personal.txt",
+            "source": "${localEnv:HOME}/.ai-secrets",
+            "target": "/home/vscode/.ai-secrets",
             "type": "bind"
         },
         {
