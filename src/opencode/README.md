@@ -1,7 +1,7 @@
 
-# opencode (opencode)
+# sopi opencode (opencode)
 
-Install opencode to devcontainers - Software Pioniere Style
+install opencode to devcontainers
 
 ## Example Usage
 
