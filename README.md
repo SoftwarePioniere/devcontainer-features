@@ -3,6 +3,10 @@
 ## Sopi Setup
 
 ```
+# Add package-read permission to your GitHub CLI token
+gh auth refresh -h github.com -s read:packages
+
+# # Log Docker/Dev Containers into GHCR
 gh auth token | docker login ghcr.io -u "$(gh api user -q .login)" --password-stdin
 ```
 
