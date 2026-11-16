@@ -1,6 +1,6 @@
 {
     "name": "opencode",
-    "id": "sopi.opencode",
+    "id": "opencode",
     "version": "0.0.1",
     "description": "Install opencode to devcontainers - Software Pioniere Style",
     "documentationURL": "https://opencode.ai",
