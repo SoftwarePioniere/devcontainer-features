@@ -1,5 +1,5 @@
 {
-    "name": "SoPi Scaleway CLI",
+    "name": "scaleway-cli",
     "id": "sopi.scaleway.cli",
     "version": "0.0.1",
     "description": "Install Scaleway CLI to devcontainers",    

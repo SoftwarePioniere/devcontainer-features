@@ -1,0 +1,34 @@
+{
+    "name": "opencode",
+    "id": "sopi.opencode",
+    "version": "0.0.1",
+    "description": "Install opencode to devcontainers - Software Pioniere Style",
+    "documentationURL": "https://opencode.ai",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ],
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.ai-secrets/sopi-personal.txt",
+            "target": "/home/vscode/.ai-secrets/sopi-personal.txt",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.config/opencode/opencode.jsonc",
+            "target": "/home/vscode/.config/opencode/opencode.jsonc",
+            "type": "bind"
+        },
+        {
+            "source": "${localEnv:HOME}/.config/opencode/plugins",
+            "target": "/home/vscode/.config/opencode/plugins",
+            "type": "bind"
+        }
+    ],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "sst-dev.opencode"
+            ]
+        }
+    }
+}
